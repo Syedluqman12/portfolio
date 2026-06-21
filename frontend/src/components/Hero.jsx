@@ -11,7 +11,7 @@ function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="hero-badge">
-             Application Support Engineer @ TCS
+            Application Support Engineer @ TCS
           </span>
 
           <h1>
@@ -35,6 +35,14 @@ function Hero() {
           <div className="hero-buttons">
             <a href="#projects" className="btn primary-btn">
               View Projects
+            </a>
+
+            <a
+              href="/resume.pdf"
+              download
+              className="btn secondary-btn"
+            >
+              Download Resume
             </a>
 
             <a href="#contact" className="btn secondary-btn">
