@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <section className="hero" id="home">
-      <div className="container hero-content">
+      <div className="container hero-wrapper">
 
+        {/* Left Side Content */}
         <motion.div
+          className="hero-content"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -14,9 +16,7 @@ function Hero() {
             Application Support Engineer @ TCS
           </span>
 
-          <h1>
-            Syed Luqman M
-          </h1>
+          <h1>Syed Luqman M</h1>
 
           <h2>
             Building Modern Applications &
@@ -66,6 +66,19 @@ function Hero() {
               <p>Professional Experience</p>
             </div>
           </div>
+        </motion.div>
+
+        {/* Right Side Photo */}
+        <motion.div
+          className="hero-image"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src="/profile.jpg"
+            alt="Syed Luqman"
+          />
         </motion.div>
 
       </div>
