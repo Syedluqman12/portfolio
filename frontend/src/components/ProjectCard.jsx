@@ -1,25 +1,19 @@
 function ProjectCard({ title, description, tech }) {
-  const techList = tech.split("•").map((item) => item.trim());
-
   return (
     <div className="project-card">
-      <div className="project-header">
-        <h3>{title}</h3>
-      </div>
+      <h3>{title}</h3>
 
       <p className="project-description">
         {description}
       </p>
 
-      <div className="project-tech">
-        {techList.map((item, index) => (
-          <span className="tech-badge" key={index}>
+      <div className="tech-stack">
+        {tech.map((item, index) => (
+          <span key={index} className="tech-badge">
             {item}
           </span>
         ))}
       </div>
-
-      
     </div>
   );
 }
